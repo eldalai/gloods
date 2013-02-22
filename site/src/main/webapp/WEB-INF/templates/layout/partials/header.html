@@ -1,6 +1,6 @@
 <header>
-	<div id="header_content">
-		<div id="cart_info">
+
+	<div id="cart_info">
 		    <div th:if="${customer.anonymous}"  th:remove="tag">
 				<a class="account" th:href="@{/login}">
 				<img th:src="@{/img/user_login.png}" alt="Login Icon" />
@@ -23,8 +23,9 @@
 				<span class="headerCartItemsCount" th:text="${cart.itemCount}" />
 				<span class="headerCartItemsCountWord" th:text="${cart.itemCount == 1 ? ' item' : ' items'}" />
 			</a>
-		</div>
+	</div>
 		
+	<div id="header_content">
 		<div id="logo"><h1><a th:href="@{/}">Gloods Home</a></h1></div>
 		
 		<div id="search">
